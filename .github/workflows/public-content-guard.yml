@@ -1,0 +1,22 @@
+name: Public content guard
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  disclosure-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run public-content guard
+        env:
+          NAVALFORGE_BLOCKED_TERMS: ${{ secrets.NAVALFORGE_BLOCKED_TERMS }}
+        run: ./scripts/check_public_content.sh

@@ -1,0 +1,43 @@
+# Credentials and environments
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.*
+secrets.*
+
+# Internal and customer material
+data/internal/
+data/private/
+reports/internal/
+reports/private/
+cases/internal/
+cases/private/
+customers/
+clients/
+tenders/
+contracts/
+
+# Native engineering and production files
+*.3dm
+*.dwg
+*.dxf
+*.step
+*.stp
+*.iges
+*.igs
+*.stl
+*.obj
+*.msh
+*.foam
+*.cas
+
+# Local tooling
+.DS_Store
+Thumbs.db
+__pycache__/
+.pytest_cache/
+.venv/
+node_modules/
