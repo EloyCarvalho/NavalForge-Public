@@ -22,6 +22,12 @@ The demonstration covers:
 
 See the signed and dated [validation record](VALIDATION_RECORD.md), the [methodology](docs/VALIDATION_METHODOLOGY.md), and the complete [six-page validation gallery](docs/GALLERY.md).
 
+## Current R&D milestone
+
+A separate fully synthetic 6 m research hull is being used to develop the parametric 3D geometry and stability engine. The current public milestone records the first geometric large-angle GZ workflow without exposing the private research solver.
+
+See [Prototype 005 — Large-angle geometric stability](docs/PROTOTYPE_005_PUBLIC_RECORD.md).
+
 ## Repository scope
 
 This public repository contains only:
